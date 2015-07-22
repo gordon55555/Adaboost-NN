@@ -1,8 +1,0 @@
-import theano
-import numpy
-
-a = theano.shared(value=numpy.zeros((4,2),dtype="float32"))
-b = theano.shared(value=numpy.ones((4,2),dtype="float32"))
-c = a
-a=b
-print c.get_value()
