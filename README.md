@@ -1,31 +1,31 @@
-Adaboost-NN is a fast deep learning framework. It is developed by    
-Gordon,a postgraduate student.                                       
+Adaboost-NN is a fast deep learning framework. It is developed by Gordon,a postgraduate
+student.                                                                               
                                                                   
-This framework is integrated by different model. Users can select    
-the neural network algrithm(MLP, DBN, SDA, CNN) to intergrate it into
-a whole modle using the adaboost.m1 or adaboost.m2. All works just 
-can be done by the config file.                                       
+This framework is integrated by different model. Users can select the neural network algrithm(MLP, DBN, SDA, CNN) to intergrate it into a whole modle using the adaboost.m1 or adaboost.m2. All works just can be done by the config file.                                         
 
-INSTALL:                                                               
-    python2.7                                                          
-    theano: A package of python                                        
-    GPU   : It is not necessary.But it will speed up your project if   
-            you have one.                                              
+INSTALL:                                                                               
+----python2.7                                                                          
+----theano: A package of python                                                        
+----GPU   : It is not necessary.But it will speed up your project if you have one.                                                                                   
+note: The environment install and the tutorial of theano, you can access the webset: http://deeplearning.net/software/theano/                                                     
 
-RUN:                                                                   
+
+RUN:                                                                                   
 After you download the code form github, you can see a file named ensemb.py.
 It likes the main function in C++ or other program language. You should run
-the command according follow format.                                   
-command: python ensemb.py --help                                       
-you can get the result:                                                
----------------------------------------------------------------------
+the command according follow format.                                                    
+                                
+command: python ensemb.py --help                                                        
+you can get the result:                                                                 
+
+----------------------------------------------------------------------------------------.
 images_deal : deal the image to pickle file                            
 ----------    ensemb.py --images_deal                                  
 ----------              --source_path=/home/gd/ensemble-nn/data/image  
 ----------              --size_x=28                                    
 ----------              --size_y=28                                    
 ----------              --channel=3                                    
----------------------------------------------------------------------
+---------------------------------------------------------------------.
 samples     : sample the samples from the datasets                     
 ----------    ensemb.py --samples                                      
 ----------              --no_replace=1                                 
@@ -33,19 +33,19 @@ samples     : sample the samples from the datasets
 ----------              --source_path=./data/mnist.pkl.gz              
 ----------              --number=30000                                 
 ----------              --save_path=./data/mnist-sample-replace.pkl    
----------------------------------------------------------------------  
+--------------------------------------------------------------------- . 
 train_test  : train and test the model                                 
 ----------    ensemb.py --train_test                                   
 ----------              --dataset =/home/gd/ensemble-nn/data/mnist.pkl.gz
 ----------              --config_path=./config-example                 
 ----------              --n_y =10                                      
 ----------              --m1  = 1                                      
----------------------------------------------------------------------  
+--------------------------------------------------------------------- . 
                                                                              
 command: python ensemb.py --train_test --dataset /home/gd/ensemble-nn/data/mnist.pkl.gz 
  --config_path ./config-example --n_y 10 --m1 1                        
 you can get the result after seleral iterate.                          
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------.
                                                                                                                                         
 Boost error :0.302462135563                                            
 ----Model 0 weight value :5.50250406656                                
@@ -54,7 +54,8 @@ Boost error :0.302462135563
 ----Model 3 weight value :0.835600700207                               
 ----The error rate of the testdatas:                                   
 [0.9826, 0.9861, 0.9868, 0.9881]                                       
-*******************************************************************************
+*******************************************************************************.
+
                                                                        
 the detail message, you can read in other file.                        
                                                                        

@@ -1,5 +1,0 @@
-import os
-
-filepath ='../tmp/test.txt'
-print os.path.split(filepath)
-os.mkdir(os.path.split(filepath)[0])
