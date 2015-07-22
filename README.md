@@ -18,14 +18,16 @@ the command according follow format.
 command: python ensemb.py --help                                                        
 you can get the result:                                                                 
 
-----------------------------------------------------------------------------------------.
+------------------------------------------------------------------------.                      
+
 images_deal : deal the image to pickle file                            
 ----------    ensemb.py --images_deal                                  
 ----------              --source_path=/home/gd/ensemble-nn/data/image  
 ----------              --size_x=28                                    
 ----------              --size_y=28                                    
 ----------              --channel=3                                    
----------------------------------------------------------------------.
+---------------------------------------------------------------------.                         
+
 samples     : sample the samples from the datasets                     
 ----------    ensemb.py --samples                                      
 ----------              --no_replace=1                                 
@@ -33,7 +35,8 @@ samples     : sample the samples from the datasets
 ----------              --source_path=./data/mnist.pkl.gz              
 ----------              --number=30000                                 
 ----------              --save_path=./data/mnist-sample-replace.pkl    
---------------------------------------------------------------------- . 
+--------------------------------------------------------------------- .                             
+
 train_test  : train and test the model                                 
 ----------    ensemb.py --train_test                                   
 ----------              --dataset =/home/gd/ensemble-nn/data/mnist.pkl.gz
@@ -54,7 +57,7 @@ Boost error :0.302462135563
 ----Model 3 weight value :0.835600700207                               
 ----The error rate of the testdatas:                                   
 [0.9826, 0.9861, 0.9868, 0.9881]                                       
-*******************************************************************************.
+*******************************************************************************************.
 
                                                                        
 the detail message, you can read in other file.                        
@@ -62,8 +65,8 @@ the detail message, you can read in other file.
 IMPORTANT NOTE:                                                        
 THIS FRAMEWORE IS DEVELOPED FOR LEARNING ADABOOST AND NEURAL NETWORK.  
                                                                        
-Please just cite it in your publications if it helps your research:    
-Author = {Gordon},Year = {2015}                                        
+Please just cite it in your publications if it helps your research: Author = {Gordon},Year = {2015}   
+                                     
 In addition, I believe this framework may be have many bugs because it is the 
 first vection and just have a simple test. In the free time, I will make it more
 and more strong. If you have any question, just sent to me. I promise you will
